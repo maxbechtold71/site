@@ -228,6 +228,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2-building-the-website" class="md-nav__link">
+    2. Building the Website
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-using-github-pages" class="md-nav__link">
+    3. Using GitHub Pages
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -334,6 +348,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2-building-the-website" class="md-nav__link">
+    2. Building the Website
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-using-github-pages" class="md-nav__link">
+    3. Using GitHub Pages
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -365,10 +393,65 @@ that we could quickly modify on our computer and that was public to everyone.</p
 <p>First, we installed Python. Python allowed us to use MkDocs to build a site, so
 having one but not the other was no help. To do this, we retrieved the latest version
 from the <a href="https://www.python.org/">Python website</a>.</p>
-<p>Next, we had to install pip. Using the command line, we simply entered:
+<p>Next, we had to install pip. Using the command line, we simply entered:\
 <code>python get-pip.py</code></p>
-<p>After that, we installed mkdocs by entering:
+<p>After that, we installed mkdocs by entering:\
 <code>pip install mkdocs</code></p>
+<h2 id="2-building-the-website">2. Building the Website</h2>
+<p>After getting the initial steps set up, we could start making Markdown files
+in our project and editing them. Of course, we had to organize these files so that
+MkDocs would use them when building the website.</p>
+<p>To do this, we made a large folder: <code>my-mkdocs</code>.</p>
+<p>This contained:
+ * A folder <code>docs</code> for Markdown files.
+ * A folder <code>site</code> for the build website.
+ * A file <code>mkdocs.yml</code> which contained the information for organizing the site.</p>
+<p>After editing the initial Markdown files like <code>index.md</code> and <code>about.md</code>, we could
+make our first build of the site.</p>
+<p>To build the website, we had to enter the command line interface once again.
+There were three steps to building the site.</p>
+<ol>
+<li>Enter <code>cd desktop</code> to go to the desktop files.</li>
+<li>Enter <code>cd my-mkdocs</code> to enter the MkDocs files.</li>
+<li>Enter <code>mkdocs build</code> to build the website, which is stored in the <code>site</code> folder.</li>
+</ol>
+<p>To view the website, there were three more steps to take.</p>
+<ol>
+<li>Enter <code>mkdocs serve</code> to host the website.</li>
+<li>Copy the link that the command line gives to you.</li>
+<li>Paste the link in a browser URL.</li>
+</ol>
+<p>This allowed us to temporarily view the website, but it would stop hosting as soon
+as we exited the command line. This meant that we had to use a more efficient way of
+hosting the website: GitHub Pages.</p>
+<h2 id="3-using-github-pages">3. Using GitHub Pages</h2>
+<p>Setting up GitHub Pages meant we could now freely host the website and make changes
+a lot more quickly and efficiently. We followed a few steps to link our website to
+GitHub Pages.</p>
+<ol>
+<li>Install GitHub desktop.</li>
+<li>Make a new local repository.</li>
+<li>Use the name "site" to link with our <code>site</code> file.</li>
+<li>Use the <code>main</code> and <code>root</code> branches.</li>
+<li>Keep the repository public.</li>
+</ol>
+<p>After creating the repository, we could now keep track of any changes we made by
+building the site folder. First, we had to host the site. We enterd GitHub broswer
+to publish the first commit of the website and keep it public.
+When we changed the folder by using <code>mkdocs build</code> in
+the command line, we could now follow a couple more steps to change the website.</p>
+<ol>
+<li>Enter GitHub desktop.</li>
+<li>Select the current project (site).</li>
+<li>Look over changes.</li>
+<li>Add a summary of changes.</li>
+<li>Select "Commit to main".</li>
+<li>Select "Push to origin".</li>
+</ol>
+<p>After doing these, we could now enter GitHub browser mode to view the latest
+deployment of the website. Overall, this was a very long process, but it was
+very rewarding to get to see our website hosted and successful after the long
+time it took to set up!</p>
                 
               
               
